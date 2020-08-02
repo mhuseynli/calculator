@@ -1,1 +1,39 @@
-<h2>Salam</h2>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calc.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form class="calculator" name="calc">
+        <input class="display" name="display" type="text">
+        <span class="num clear" onclick="document.calc.display.value=''">c</span>
+        <span style="background:darkgrey" class="num" onclick="remove()"><img width="25px"
+                src="icons8-clear-symbol-96.png"></span>
+        <span class="num" onclick="document.calc.display.value+='/'">/</span>
+        <span class="num" onclick="document.calc.display.value+='7'">7</span>
+        <span class="num" onclick="document.calc.display.value+='8'">8</span>
+        <span class="num" onclick="document.calc.display.value+='9'">9</span>
+        <span class="num" onclick="document.calc.display.value+='*'">x</span>
+        <span class="num" onclick="document.calc.display.value+='4'">4</span>
+        <span class="num" onclick="document.calc.display.value+='5'">5</span>
+        <span class="num" onclick="document.calc.display.value+='6'">6</span>
+        <span class="num" onclick="document.calc.display.value+='-'">-</span>
+        <span class="num" onclick="document.calc.display.value+='3'">3</span>
+        <span class="num" onclick="document.calc.display.value+='2'">2</span>
+        <span class="num" onclick="document.calc.display.value+='1'">1</span>
+        <span class="num plus" onclick="document.calc.display.value+='+'">+</span>
+        <span class="num" onclick="document.calc.display.value+='.'">.</span>
+        <span class="num" onclick="document.calc.display.value+='0'">0</span>
+        <span class="num" onclick="document.calc.display.value+='00'">00</span>
+        <span class="num equal" onclick="document.calc.display.value=eval(calc.display.value)">=</span>
+    </form>
+
+    <script src="calc.js"></script>
+</body>
+
+</html>
