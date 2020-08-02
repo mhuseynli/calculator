@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed";
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #283149;
+}
+
+.calculator{
+    position: relative;
+    display: grid;
+    box-shadow: 0px 0px 20px 1px;
+}
+
+.calculator .display{
+    grid-column: span 4;
+    height: 80px;
+    text-align: right;
+    border: none;
+    outline: none;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.calculator span{
+    display: grid;
+    width: 80px;
+    height: 80px;
+    color: #ffffff;
+    background: #404b69;
+    place-items: center;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.calculator span:active{
+    background: #00818a;
+}
+
+.calculator span.clear{
+    grid-column: span 2;
+    width: 160px;
+    background: #c70039;
+}
+
+
+.calculator span.equal{
+    background: #28a9ff;
+}
+
